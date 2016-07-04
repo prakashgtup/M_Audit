@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maudit.main">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AuditorListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SubmittedAuditorListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Login_AppTheme" />
+        <activity
+            android:name=".SectionListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".SubmittedAuditorsSectionListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".AdhocAuditActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".AssignAuditorsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReAssignAuditorsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MandatoryActivity"
+            android:theme="@style/Dialog_AppTheme" />
+        <activity
+            android:name=".RemarksActivity"
+            android:screenOrientation="landscape"
+            />
+    </application>
+
+</manifest>

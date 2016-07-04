@@ -1,0 +1,426 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_question_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/adhoc_audit_title_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adhoc_audit_title_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/adhoc_audit_title_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/repeatSectionTitle_txt"
+                            style="@style/textViewStyleHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/first_row_height"
+                            android:gravity="end|center"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B1B3B2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/first_row_height"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textview_sno"
+                                style="@style/textViewStyleHeader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/sno" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:background="#B1B3B2" />
+
+                            <TextView
+                                android:id="@+id/textview_standards"
+                                style="@style/textViewStyleHeader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/standards_clauses" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:background="#B1B3B2" />
+
+                            <TextView
+                                android:id="@+id/textview_questions"
+                                style="@style/textViewStyleHeader"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/first_row_height"
+                                android:layout_weight=".8"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/questions" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/info"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearlayout_question_row_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adhoc_audit_title_bg"
+                    android:orientation="vertical">
+
+                    </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adhoc_audit_title_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textViewStyleHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/first_row_height"
+                        android:gravity="end"
+                        android:text="@string/sno"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#B1B3B2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/first_row_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textview_sno"
+                            style="@style/textViewStyleHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/sno" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="#B1B3B2" />
+
+                        <TextView
+                            android:id="@+id/textview_standards"
+                            style="@style/textViewStyleHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/standards_clauses" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="#B1B3B2" />
+
+                        <TextView
+                            android:id="@+id/textview_questions"
+                            style="@style/textViewStyleHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/first_row_height"
+                            android:layout_weight=".8"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/questions" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/info"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>-->
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#B1B3B2" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscrollview_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:fillViewport="true"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+
+                        >
+
+                        <!--  <LinearLayout
+                              android:id="@+id/linearlayout_evaluation"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="@dimen/first_row_height"
+                                  android:text="ererq"
+                                  android:visibility="visible" />
+
+                              <View
+                                  android:layout_width="match_parent"
+                                  android:layout_height="1dp"
+                                  android:background="#B1B3B2" />
+
+                          </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fragment_cop_right_title_bg"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearlayout_first_row_options_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/first_row_height"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#B1B3B2" />
+                            <LinearLayout
+                                android:id="@+id/linearlayout_second_row_options_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/first_row_height"
+                                android:orientation="horizontal"></LinearLayout>
+
+                        </LinearLayout>
+                        <!-- <View
+                             android:layout_width="1dp"
+                             android:layout_height="match_parent"
+                             android:background="#B1B3B2" />
+        -->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/first_row_height"
+                                android:background="@drawable/adhoc_audit_title_bg"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#B1B3B2" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/first_row_height"
+                                android:background="@drawable/adhoc_audit_title_bg"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/camera_title_icon" />
+
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#B1B3B2" />
+
+                                <TextView
+                                    style="@style/textViewStyleHeader"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawableLeft="@drawable/remark_icon"
+                                    android:gravity="center"
+                                    android:text="@string/remarks"
+                                    android:drawablePadding="15dp"
+                                    android:textSize="@dimen/txt_sub_row_title" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                   <!-- <LinearLayout
+                        android:id="@+id/linearlayout_evaluation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/first_row_height"
+                            android:text="ererq"
+                            android:visibility="visible" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B1B3B2" />
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_rightside_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#BB1D05"
+                        android:orientation="vertical">
+
+                        <!--<LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/first_row_height"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B1B3B2" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/first_row_height"
+                            android:orientation="horizontal"></LinearLayout>
+-->
+                    </LinearLayout>
+                   <!-- <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#B1B3B2" />
+-->
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_camera_options_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--<LinearLayout
+                            android:id="@+id/linearlayout_first_row_camera_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/first_row_height"
+                            android:background="@drawable/adhoc_audit_title_bg"
+                            android:orientation="horizontal"></LinearLayout>
+-->
+                       <!-- <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B1B3B2" />-->
+
+                       <!-- <LinearLayout
+                            android:id="@+id/linearlayout_second_row_camera_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/first_row_height"
+                            android:background="@drawable/adhoc_audit_title_bg"
+                            android:orientation="horizontal">
+
+                            &lt;!&ndash;<ImageView
+                                android:id="@+id/imageview_camera"
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/camera_title_icon" />
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#B1B3B2" />
+
+                            <TextView
+                                android:id="@+id/imageview_remark"
+                                style="@style/textViewStyleHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableLeft="@drawable/remark_icon"
+                                android:gravity="center"
+                                android:text="@string/remarks"
+                                android:textSize="@dimen/txt_sub_row_title" />&ndash;&gt;
+                        </LinearLayout>-->
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

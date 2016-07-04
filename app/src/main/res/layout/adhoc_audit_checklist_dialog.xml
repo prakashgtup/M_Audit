@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_corner"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="@string/adhoc_checklist_dialog_title"
+            android:textColor="#fff"
+            android:textSize="@dimen/txt_sub_title" />
+
+        <Button
+            android:id="@+id/adhoc_audit_done_button"
+            style="@style/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/adhoc_checklist_dialog_btn"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/tick_button_bg"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <!-- Grid View -->
+    <GridView
+        android:id="@+id/Checklist_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="14dip"
+        android:numColumns="3"
+        android:padding="0dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="14dip" />
+
+
+</LinearLayout>

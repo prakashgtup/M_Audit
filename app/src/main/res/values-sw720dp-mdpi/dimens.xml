@@ -1,0 +1,84 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="device_size">700dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="txt_header">23sp</dimen>
+    <dimen name="txt_sub_title">18sp</dimen>
+    <dimen name="sub_header_height">18sp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="btn_width">500dp</dimen>
+    <bool name="isTablet_700">true</bool>
+
+    <!--Dimen related to login-->
+    <dimen name="width">800dp</dimen>
+    <dimen name="height">350dp</dimen>
+    <dimen name="margin_top">70dp</dimen>
+    <dimen name="btn_login_width">150dp</dimen>
+    <dimen name="logo_margin_top">15dp</dimen>
+    <dimen name="logo_width">400dp</dimen>
+    <dimen name="logo_height">130dp</dimen>
+    <dimen name="txt_margin_top">35dp</dimen>
+    <dimen name="list_height">35dp</dimen>
+
+    <!-- Dimen related to section list activity-->
+    <dimen name="layout_height">250dp</dimen>
+    <dimen name="table_layout_height">50dp</dimen>
+    <dimen name="txt_sub_row_title">16sp</dimen>
+    <dimen name="first_row_height">42dp</dimen>
+    <dimen name="editext_column_width">200dp</dimen>
+    <dimen name="column_width">480dp</dimen>
+    <dimen name="other_remarks_popup_height">400dp</dimen>
+    <dimen name="other_remarks_popup_width">500dp</dimen>
+   <!-- <dimen name="column_evaluation_option_height">140dp</dimen>-->
+    <dimen name="question_item_column_height">70dp</dimen>
+    <dimen name="btn_margin">50dp</dimen>
+    <dimen name="btn_margin_reject_reason">50dp</dimen>
+    <dimen name="header_column_width">50dp</dimen>
+    <dimen name="camera_icon_cell_width">135dp</dimen>
+    <dimen name="camera_image_count_button_width">30dp</dimen>
+
+    <!-- Dimen related to section list activity-->
+    <dimen name="fragment_height">320dp</dimen>
+    <dimen name="camera_container_width">298dp</dimen>
+    <dimen name="section_btn_height">70dp</dimen>
+    <dimen name="option_width">70dp</dimen>
+    <dimen name="dialog_container">500dp</dimen>
+
+    <!--adhoc_audit-->
+    <dimen name="adhoc_audit_subtitle_height">50dp</dimen>
+    <dimen name="adhoc_audit_single_container_padding">20dp</dimen>
+    <dimen name="adhoc_audit_btn_width">400dp</dimen>
+    <dimen name="adhoc_audit_btn_height">45dp</dimen>
+    <dimen name="adhoc_audit_txt_size">20sp</dimen>
+    <dimen name="adhoc_audit_auditor_listview_padding">60dp</dimen>
+    <dimen name="adhoc_audit_drop_down_pop_up_height">400dp</dimen>
+    <dimen name="adhoc_audit_checklist_pop_up">500dp</dimen>
+    <!--Assign_audit-->
+    <dimen name="assign_audit_size">20sp</dimen>
+    <dimen name="assign_audit_add_btn_width">200dp</dimen>
+    <dimen name="available_sections_gridView_height">90dp</dimen>
+    <dimen name="available_sections_container_padding">20dp</dimen>
+
+    <dimen name="pop_window_height">200dp</dimen>
+    <dimen name="pop_window_width">200dp</dimen>
+    <dimen name="dialog_img_width">350dp</dimen>
+    <dimen name="column_evaluation_option_width">64dp</dimen>
+    <!-- Dimen related to customTextview-->
+    <dimen name="radiobtn_size">50dp</dimen>
+    <dimen name="top_edt_txt_size">30dp</dimen>
+    <dimen name="remarks_width">250dp</dimen>
+    <dimen name="top_edt_txt_width">150dp</dimen>
+    <integer name="top_edt_right_padding">20</integer>
+
+    <!-- Dimen related to MandatoryActivity-->
+    <dimen name="header_container_height">50dp</dimen>
+    <dimen name="dialog_height">500dp</dimen>
+    <dimen name="dialog_width">700dp</dimen>
+    <dimen name="score_popup_height">250dp</dimen>
+    <dimen name="score_popup_width">450dp</dimen>
+
+    <!--Score pop text-->
+    <dimen name="score_popup_text">14sp</dimen>
+</resources>

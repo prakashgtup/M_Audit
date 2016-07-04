@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maudit.main.ReAssignAuditorsActivity">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header" />
+
+
+    <!--<RelativeLayout
+        android:id="@+id/layout_sub_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_header"
+        android:background="@drawable/adhoc_audit_title_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="@string/adhoc_audit_title"
+            android:textColor="#fff"
+            android:textSize="@dimen/txt_sub_title" />
+
+
+    </RelativeLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:orientation="vertical"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/container1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/adhoc_audit_bottom_bg"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button_assign_audit"
+                            style="@style/buttonViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_selector"
+                            android:text="@string/assign_audit"
+                            android:textAllCaps="false" />
+                    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/container1"
+    android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Lead_Auditor_Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="Lead"
+                            android:textColor="#000"
+                            android:background="#FFF"
+                            android:textSize="@dimen/assign_audit_size" />
+
+                        <com.maudit.utils.ExpandableHeightGridView
+                            android:id="@+id/selected_lead_gridView"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/Lead_Auditor_Title"
+                            android:layout_height="wrap_content"
+                            android:background="#FFF"
+                            android:gravity="center"
+                            android:horizontalSpacing="14dip"
+                            android:numColumns="6"
+                            android:padding="10dp"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="14dip"/>
+
+                        <!--<GridView
+                            android:layout_below="@+id/Lead_Auditor_Title"
+                            android:layout_width="match_parent"
+                            android:id="@+id/selected_lead_gridView"
+                            android:layout_height="@dimen/available_sections_gridView_height"
+                            android:background="#FFF"
+                            android:gravity="center"
+                            android:horizontalSpacing="14dip"
+                            android:numColumns="6"
+                            android:padding="10dp"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="14dip" />-->
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_weight="0"
+                        android:background="#B9B9B9">
+
+                    </View>
+                    <com.maudit.utils.ExpandableHeightGridView
+                        android:id="@+id/assigned_sections_gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:horizontalSpacing="14dip"
+                        android:numColumns="1"
+                        android:padding="10dip"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="14dp"
+                       />
+                </LinearLayout>
+
+</ScrollView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

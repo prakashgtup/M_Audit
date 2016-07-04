@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">m-Audit</string>
+    <string name="title_activity_splash_screen">m-Audit</string>
+    <string name="title_activity_login">Sign in</string>
+    <!--Strings related to Auditor list activity-->
+    <string name="title">m-Audit Internal Audits</string>
+    <string name="location">Location</string>
+    <string name="checklist_name">Checklist Name</string>
+    <string name="schedule_date">Schedule Date</string>
+    <string name="last_modified">Last Modified</string>
+    <string name="create_by">Created By</string>
+    <string name="sections_assigned">Sections Assigned</string>
+    <string name="other_assigned">Other Assigned Auditors</string>
+    <string name="status">Status</string>
+    <string name="manage">Manage</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_reassign">Reassign</string>
+    <string name="btn_view">View</string>
+    <!-- Strings related to login -->
+    <string name="adid">ADID</string>
+    <string name="password">Password</string>
+    <string name="login_as">Login As:</string>
+    <string name="login_info">This application uses your ADID(Windows Login ID).\nIf you need to reset your password, please proceed to http://ldms.nhg.local to perform the reset.</string>
+    <string name="login">Login</string>
+    <string name="auditor">Auditor</string>
+    <string name="supervisor">Location Supervisor</string>
+    <string name="version">Version 1.0</string>
+    <!-- Strings related to section list activity -->
+    <string name="cop">COP</string>
+    <string name="ipsg">IPSG</string>
+    <string name="aop">AOP</string>
+    <string name="pci">PCI</string>
+    <string name="safety_goal">International Patient Safety Goals</string>
+    <string name="sno">S/N</string>
+    <string name="standards_clauses">Standards/Clauses</string>
+    <string name="questions">Questions/Measurable Elements</string>
+    <string name="other_remarks">Other Remarks</string>
+    <string name="submit">Submit</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="ok">OK</string>
+    <string name="save_draft">Save Draft</string>
+    <string name="reject_reason">Rejection Reason</string>
+    <string name="score">Score</string>
+    <string name="overall_progress">Overall Progress</string>
+    <string name="individual_progress">Individual</string>
+    <string name="remarks">Remarks</string>
+    <string name="remove">Remove</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="select_from_library">Select from library</string>
+    <string name="text_line_spacing">1.2</string>
+    <!--Adhoc Audit-->
+    <string name="adhoc_audit_title">Adhoc Audit</string>
+    <string name="adhoc_audit_type">Audit Type</string>
+    <string name="adhoc_location">Location</string>
+    <string name="adhoc_checklist_type">Checklist Type</string>
+    <string name="adhoc_auditees">Auditee(s)</string>
+    <string name="adhoc_assign_auditor">Assign Auditors</string>
+    <string name="adhoc_select_assign">Select &amp; Assign Auditors</string>
+    <string name="adhoc_patient_no">Patient Case No.</string>
+    <string name="adhoc_selected_auditors">Selected Auditors</string>
+    <string name="adhoc_start_audit">Start Audit</string>
+    <string name="adhoc_checklist_dialog_title">Please Choose Checklist Type:</string>
+    <string name="adhoc_checklist_dialog_btn">Done</string>
+    <!--Assign Auditors-->
+    <string name="select_auditor_text">Select Auditor</string>
+    <string name="available_sections_text">Available Sections</string>
+    <string name="add_auditor_text">Add Auditor</string>
+    <string name="remove_auditor_text">Remove</string>
+    <string name="assign_audit">Assign</string>
+    <!-- Strings related to section list activity -->
+    <string name="mandatory_title">Following questions are unanswered and mandatory, please check before you submit!</string>
+    <string name="chapter">Chapter</string>
+    <string name="sub_section">Sub Section</string>
+    <string name="questions_element">Questions/Measurable Elements</string>
+    <string name="reset_message">This will reset all selected answers, images and remarks for current section.\n Do you want to continue?</string>
+    <!--Score-->
+    <string name="overall_score_title">Overall Checklist Score:</string>
+    <string name="percentage_score">Percentage Score:</string>
+    <string name="section_score_title">Section Score:</string>
+    <!--Remarks-->
+    <string name="remarks_title">REMARKS</string>
+    <string name="add_other_remarks">Add Other Remark:</string>
+    <string name="no_connection">No WiFi connection is currently available. Please open up the audit checklist in a connected mode</string>
+    <string name="audit_list_offline_alert_message">Changes made during offline mode that have not been synced with the server will be lost.
+        Do you want to continue without saving the changes?</string>
+    <string name="unsaved_changes_pop_message">There are unsaved changes on Device. Do you want to save to server ?</string>
+    <string name="discard">Discard</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <!--Submitted Audit Lis-->
+    <string name="audit_date">Audit Date</string>
+    <string name="audit_time">Audit Time</string>
+    <string name="audited_by">Audited By</string>
+    <string name="submitted_audit_list_title">Submitted Audit List</string>
+</resources>

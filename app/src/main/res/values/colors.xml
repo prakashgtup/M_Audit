@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E65D55</color>
+    <color name="colorPrimaryDark">#E56359</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="table_header">#C31B02</color>
+    <color name="sub_header">#FDFFFC</color>
+    <color name="colorHeaderLayout">#E65D55</color>
+    <color name="bg_login">#DCDEDB</color>
+    <color name="sub_section_layout">#FFE3DF</color>
+    <color name="radio_btn_color">#008000</color>
+    <color name="btn_invisible_color">#BFC4C0</color>
+    <color name="assign_section_sub_title_bg">#FFE1E0</color>
+    <color name="dialog_header_color">#CF4748</color>
+</resources>

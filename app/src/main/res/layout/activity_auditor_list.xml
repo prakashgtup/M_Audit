@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/relative_second_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_below="@+id/layout_header">
+
+        <TextView
+            android:id="@+id/textview_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:text="17/11/15"
+            android:textColor="#5A5A5B"
+            android:textSize="@dimen/txt_sub_title" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/txt_sub_title"
+            android:layout_height="@dimen/txt_sub_title"
+            android:textSize="@dimen/txt_sub_title"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textview_role"
+            android:background="#FFFF00" />
+
+        <TextView
+            android:id="@+id/textview_locall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:padding="5dp"
+            android:text="Locally Modified"
+            android:textColor="#5A5A5B"
+            android:textSize="@dimen/txt_sub_title" />
+
+        <Button
+            android:id="@+id/adhoc_audit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Adhoc Audit"
+            android:textAllCaps="false"
+            android:background="@drawable/add_adhoc"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_second_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textview_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="Pull Down to Refresh" />
+            <LinearLayout
+                android:id="@+id/linear_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/adhoc_audit_title_bg">
+
+                <TextView
+                    android:id="@+id/textview_location"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/location"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_checklist_name"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checklist_name"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_schedule_date"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/schedule_date"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_last_modified"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/last_modified"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_create_by"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/create_by"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_section_assigned"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sections_assigned"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_other_assigned"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".9"
+                    android:text="@string/other_assigned"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_status"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/status"
+                    android:textColor="#fff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#B1B3B2" />
+
+                <TextView
+                    android:id="@+id/textview_manage"
+                    style="@style/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".95"
+                    android:text="@string/manage"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_auditor_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear_header" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

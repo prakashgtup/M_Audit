@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_container"
+    android:layout_height="@dimen/dialog_container"
+    android:id="@+id/linearlayout_capture_container"
+    android:background="#fff"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageview_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow_big_left"
+        android:padding="5dp" />
+    <ImageView
+        android:id="@+id/imageview_display"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/splash_landscape"
+        android:layout_height="@dimen/dialog_img_width"
+        android:layout_width="@dimen/dialog_img_width"/>
+    <ImageButton
+        android:id="@+id/imageview_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow_big_right_visible"
+        android:padding="5dp" />
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/remove"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+    </RelativeLayout>
